@@ -21,6 +21,9 @@ public class MainDemoApp {
 
         //Call the "Business-model"
         Account myAccount = new Account();
+        myAccount.setName( "Garruk" );
+        myAccount.setLevel( "Mythic" );
+
         theAccountDAO.addAccount( myAccount, true );
         theAccountDAO.doWork();
 
